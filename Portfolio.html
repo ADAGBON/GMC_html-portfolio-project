@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+        nav a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+        }
+        section {
+            padding: 40px 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>This is a brief introduction to who I am.</p>
+        <!-- Video -->
+        <video width="400" controls>
+            <source src="Software Engineering Intro.mp4" type="video/mp4">
+            
+        </video>
+        <!-- Audio -->
+        <audio controls>
+            <source src="Software Engineering Soundtrack.m4a" type="audio/mpeg">
+            
+        </audio>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate developer with experience in HTML, CSS, and JavaScript.</p>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript & React</li>
+            <li>Backend Development</li>
+        </ul>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work">
+        <h2>My Work</h2>
+        <p>Here are some of my projects:</p>
+        <table>
+            <tr>
+                <th>Project</th>
+                <th>Description</th>
+                <th>Link</th>
+            </tr>
+            <tr>
+                <td>Project A</td>
+                <td>A web application built using React.</td>
+                <td><a href="#">View</a></td>
+            </tr>
+            <tr>
+                <td>Project B</td>
+                <td>A backend API developed with Node.js.</td>
+                <td><a href="#">View</a></td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>Download my resume here:</p>
+        <a href="Law Adagbon SE.pdf" download>Download Resume</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+            
+            <input type="submit" value="Send">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
